@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Static Web App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is a simple static web app deployed to Azure using Azure Developer CLI (azd).</p>
+            <p>Built on: <span id="current-date"></span></p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This demo showcases how to create and deploy a static web application to Azure Static Web Apps using the Azure Developer CLI.</p>
+            <ul>
+                <li>Simple HTML structure</li>
+                <li>CSS styling</li>
+                <li>JavaScript interactivity</li>
+                <li>Azure deployment ready</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out if you have any questions!</p>
+            <button id="contact-btn">Say Hello!</button>
+            <p id="message" style="display: none;">Hello! Thanks for visiting our static web app!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Static Web App. Deployed with Azure Developer CLI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
