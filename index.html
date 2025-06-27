@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Static Web App</title>
+     <script>
+        // Detect if we're behind a proxy by checking the URL
+        const isProxy = window.location.pathname.startsWith('/app/');
+        const basePath = isProxy ? '/app/' : '/';
+        document.write('<base href="' + basePath + '">');
+    </script>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>

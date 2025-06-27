@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - My Static Web App</title>
-    <link rel="stylesheet" href="https://ambitious-pebble-0911a2c03.6.azurestaticapps.net/styles.css">
+    <script>
+        // Detect if we're behind a proxy by checking the URL
+        const isProxy = window.location.pathname.startsWith('/app/');
+        const basePath = isProxy ? '/app/' : '/';
+        document.write('<base href="' + basePath + '">');
+    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -50,6 +56,6 @@
         <p><a href="index.html">← Back to Home</a></p>
     </footer>
 
-    <script src="https://ambitious-pebble-0911a2c03.6.azurestaticapps.net/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
